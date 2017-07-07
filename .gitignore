@@ -1,0 +1,10 @@
+target
+metamodel
+.svn
+model.mwb.bak
+.idea
+*.iml
+.project
+.settings
+.classpath
+.factorypath
