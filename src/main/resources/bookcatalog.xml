@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bookcatalog.xsl" ?>
+
+<catalog> 
+  <book>
+    <title>催泪励志篇</title>
+    <bookname>周先生的自传</bookname>
+    <artist>小周</artist>
+    <country>中国</country>
+    <company>新华社出版</company>
+    <price>￥1000/本</price>
+    <year>2020年</year>
+  </book>
+</catalog>

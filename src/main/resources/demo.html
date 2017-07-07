@@ -1,0 +1,27 @@
+<!DOCTYPE html >
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+<table id="xlsQueryTable" width="100%" style="width:auto">
+    <tr>
+        <td align="right">创建时间[ 大于等于]</td>
+        <td>
+            <input align="right" type="text" id="START_DATE" name="START_DATE" value="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" class="Wdate" style="operator:ge;dataType:dateTime;" />
+        </td>
+        <td align="right">停用时间[ 小于等于]</td>
+        <td>
+            <input align="right" type="text" id="STOP_DATE" name="STOP_DATE" value="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" class="Wdate" style="operator:le;dataType:dateTime;" />
+        </td>
+    </tr>
+    <tr>
+        <td align="right">大用户名称</td>
+        <td>
+            <input align="right" type="text" id="CUSTOMER_NAME" name="CUSTOMER_NAME" value="" style="operator:eq;dataType:string;" />
+        </td>
+    </tr>
+</table>
+</body>
+</html>

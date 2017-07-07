@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="accessorySaleTemplate.xsl" ?>
+
+<orderBean>
+    <!-- 单据号 -->
+    <orderId>1</orderId>
+    <!-- 买方 -->
+    <customerName>1</customerName>
+    <!-- 地址 -->
+    <address>1</address>
+    <!-- 联系人 -->
+    <contacts>1</contacts>
+    <!-- 电话 -->
+    <telephone>1</telephone>
+    <!-- 传真 -->
+    <fax></fax>
+    <!-- 单据总金额 -->
+    <orderTotalSum></orderTotalSum>
+    <!-- 单据详情 -->
+    <detailBean>
+        <!-- 序列号 -->
+        <seq>1</seq>
+        <!--商品名称-->
+        <goodsName>1</goodsName>
+        <!--商品件号-->
+        <serialNumber>1</serialNumber>
+        <!-- 单位 -->
+        <unitSymbol>1</unitSymbol>
+        <!-- 销售数量 -->
+        <saleAmount>1</saleAmount>
+        <!-- 单价 -->
+        <unitPrice>1</unitPrice>
+        <!--销售金额-->
+        <totalSum>1</totalSum>
+        <!-- 交货日期 -->
+        <commitDate>1</commitDate>
+        <!-- 备注 -->
+        <remark>1</remark>
+    </detailBean>
+</orderBean>
