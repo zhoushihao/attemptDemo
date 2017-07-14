@@ -1,7 +1,5 @@
-package java8_practice.interfaceMethod;
+package java8_practice.base.interfaceMethod;
 
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * Created by Administrator on 2017/7/7 0007.

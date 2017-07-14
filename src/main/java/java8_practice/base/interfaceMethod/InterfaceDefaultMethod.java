@@ -1,4 +1,4 @@
-package java8_practice.interfaceMethod;
+package java8_practice.base.interfaceMethod;
 
 
 /**
