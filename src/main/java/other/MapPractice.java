@@ -9,14 +9,10 @@ public class MapPractice {
 
     public static void main(String[] strs){
         HashMap<String,String> map = new HashMap<>();
-        map.put("1","1");
-        map.put("1","2");
-        map.put("1","3");
-        map.put("1","4");
-        map.put("1","5");
-        map.put("2","5");
-        map.put("2","6");
-        System.out.print(map);
+        map.put("ff664d90-aa76-4b59-a20b-1487dda1aee219ca876a-3902-44de-8fc8-2b54e01cacc1","1");
+        map.put("ff664d90-aa76-4b59-a20b-1487dda1aee219ca876a-3902-44de-8fc8-2b54e01cacc2","2");
+        System.out.println(map.get("ff664d90-aa76-4b59-a20b-1487dda1aee219ca876a-3902-44de-8fc8-2b54e01cacc1"));
+        System.out.println((Double.parseDouble("1")+1)+"");
     }
 
 }
