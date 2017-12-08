@@ -43,13 +43,10 @@ public class MathPractice {
 
         System.out.println(map);
 
-        Double d = 11.1;
+        Integer d = 11;
         StringBuilder sbf = new StringBuilder("移库数量超出库存量的商品为:");
         for (int i=1;i<6;i++){
-            sbf.append(
-                    String.format("%d:%s(%s)库存量为:%s,移库数量为:%s;",
-                            i, "pp61", "珍珠红",
-                            "2", d.toString())
+            sbf.append(String.format("%d:%s(%s)库存量为:%s,移库数量为:%d;", i, "pp61", "珍珠红", "2", d)
             );
         }
         System.out.println(sbf.toString());

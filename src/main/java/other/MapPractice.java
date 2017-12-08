@@ -1,15 +1,27 @@
 package other;
 
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
 /**
  * Created by Administrator on 2017/5/26 0026.
  */
 public class MapPractice {
+    public static MapPractice a = new MapPractice();
+    {
+        System.out.println("A");
+    }
+
+    static {
+        System.out.println("B");
+    }
 
     public static void main(String[] strs) {
-       Double a = 1.1;
-       Double b = 1.11;
-       System.out.println(a.equals(b));
+        MapPractice b = new MapPractice();
     }
 
 }

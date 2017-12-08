@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static java.util.Comparator.*;
 
 /**
  * Created by zsh on 2017/6/8 0008.
@@ -28,20 +31,22 @@ public class SortByMoreCondition {
         SortByMoreCondition bean4 = new SortByMoreCondition("0004", 2, 1000, 10);
         list.add(bean4);
 
-        Comparator<SortByMoreCondition> comparator = (o1, o2) -> {
-            int a = o1.level - o2.level;
-            int b = o1.salary - o2.salary;
-            int c = o1.age - o2.age;
-            if(a==0){
-                if(b==0){
-                    return -c;
-                }
-                return -b;
-            }
-            return -a;
-        };
+        list = list.stream().sorted(Comparator.comparing(SortByMoreCondition::getAge)).collect(Collectors.toList());
 
-        Collections.sort(list, comparator);
+//        Comparator<SortByMoreCondition> comparator = (o1, o2) -> {
+//            int a = o1.level - o2.level;
+//            int b = o1.salary - o2.salary;
+//            int c = o1.age - o2.age;
+//            if(a==0){
+//                if(b==0){
+//                    return -c;
+//                }
+//                return -b;
+//            }
+//            return -a;
+//        };
+//        list.sort(comparator);
+
         list.forEach(entity -> System.out.println(entity.getId()+","+entity.getLevel()+","+entity.getSalary()+","+entity.getAge()));
     }
 

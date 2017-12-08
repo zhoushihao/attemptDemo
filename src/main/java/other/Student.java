@@ -1,8 +1,10 @@
 package other;
 
 import java.util.ArrayList;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -24,6 +26,7 @@ public class Student {
     public static void main(String args[]) {
         List<Student> list = new ArrayList();
         list.add(new Student("Tom", 18, 100, "class05"));
+        list.add(new Student("Tom", 18, 100, "class05"));
         list.add(new Student("Jerry", 22, 70, "class04"));
         list.add(new Student("Owen", 25, 90, "class05"));
         list.add(new Student("Jim", 30, 80, "class05"));
@@ -32,7 +35,7 @@ public class Student {
 
         System.out.println("平均年龄为：" + list.stream().collect(Collectors.averagingInt(Student::getAge)));
 
-        Map<String, Double> map = list.stream().collect(Collectors.groupingBy(Student::getClassNum, Collectors.averagingDouble(Student::getScore)));
+        Map<Student, DoubleSummaryStatistics> map = list.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.summarizingDouble(Student::getScore)));
 
         map.forEach((k, v) -> System.out.println(k + ":" + v));
     }
