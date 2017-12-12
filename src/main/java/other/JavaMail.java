@@ -1,13 +1,11 @@
 package other;
 
 import com.sun.mail.util.MailSSLSocketFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.security.GeneralSecurityException;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.Properties;
 

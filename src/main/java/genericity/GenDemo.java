@@ -1,8 +1,5 @@
 package genericity;
 
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Created by ZSH
  */

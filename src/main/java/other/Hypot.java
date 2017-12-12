@@ -1,8 +1,9 @@
 package other;
 
 //======================================
-import static java.lang.Math.sqrt;//开方
-import static java.lang.Math.pow;//幂
+
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
 //======================================
 /**
  * Created by ZSH

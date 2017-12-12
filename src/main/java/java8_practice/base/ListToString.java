@@ -2,7 +2,6 @@ package java8_practice.base;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Created by Administrator on 2017/7/11 0011.
