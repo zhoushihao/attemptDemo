@@ -40,6 +40,5 @@ public class MyClass<T extends Comparable> implements MinMax<T> {
         System.out.println("Max value in chs: "+cob.max());
         System.out.println("Min value in chs: "+cob.min());
 
-
     }
 }
