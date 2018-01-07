@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
  */
 public class BRReadLines {
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String args[]){
         String str = " a s d f as b z";
         char cs[] = StringUtils.trimAllWhitespace(str).toCharArray();
         int[] array = new int[128];
