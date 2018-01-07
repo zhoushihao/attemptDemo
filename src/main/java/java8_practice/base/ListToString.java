@@ -14,7 +14,7 @@ public class ListToString {
         strings.add("222");
         strings.add("333");
         StringBuffer sbf = new StringBuffer();
-        strings.forEach(entity->sbf.append("'"+entity+"'"+","));
+        strings.forEach(entity-> sbf.append("'").append(entity).append("'").append(","));
         sbf.insert(0,"(").insert(sbf.length()-1,")");
         String str = sbf.substring(0,sbf.length()-1);
         System.out.println(str);
