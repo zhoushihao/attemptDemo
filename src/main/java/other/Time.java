@@ -1,6 +1,7 @@
 package other;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 /**
@@ -15,10 +16,10 @@ public class Time {
         System.out.println(startDate.compareTo(endDate));
 
         double a = 3.1111;
-        System.out.println(new Double(Math.ceil(a)).intValue());
+        System.out.println(Math.ceil(a));
 
         LocalDate date = LocalDate.now();
-        System.out.println(date);
+        System.out.println(date.format(DateTimeFormatter.ofPattern("yyyy年MM月dd日")));
 
         Double b = 0.0;
         System.out.println(b==0);
