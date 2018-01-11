@@ -3,7 +3,7 @@ package string;
 /**
  * Created by ZSH
  */
-public class getCharsDemo {
+public class GetCharsDemo {
     public static void main (String args[]){
         String s = "This is a demo of the getChars method.";
         int start = 10;

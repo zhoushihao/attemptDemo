@@ -3,5 +3,5 @@ package string;
 /**
  * Created by ZSH
  */
-public class other {
+public class Other {
 }
