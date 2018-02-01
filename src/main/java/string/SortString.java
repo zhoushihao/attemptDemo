@@ -11,9 +11,9 @@ public class SortString {
         String[] arr = {"Now","is","the","time","for","all","good","men",
                         "to","come","to","the","aid","of","their","country"};
 
-        List<String> list = new ArrayList<>(List.of(arr));
-        list.sort(String::compareToIgnoreCase);
-
-        System.out.println(list);
+//        List<String> list = new ArrayList<>(List.of(arr));
+//        list.sort(String::compareToIgnoreCase);
+//
+//        System.out.println(list);
     }
 }

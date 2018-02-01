@@ -16,7 +16,7 @@ public class Other {
             final int temp = i;
             c.add(Executors.callable(() -> {
                 try {
-                    final Socket socket = new Socket("192.168.0." + temp, 80);
+                    final Socket socket = new Socket("192.168.1." + temp, 80);
                     System.out.println(temp);
                 } catch (final Exception ignored) {
                     ignored.printStackTrace();
