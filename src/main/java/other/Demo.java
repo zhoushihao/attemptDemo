@@ -33,7 +33,7 @@ public class Demo {
 
 class A {
     A() {
-        System.out.println("A");
+        System.out.println("AA");
     }
 }
 

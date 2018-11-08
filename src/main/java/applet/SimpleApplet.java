@@ -9,7 +9,7 @@ import java.awt.*;
 public class SimpleApplet extends Applet {
     @Override
     public void paint(Graphics g) {
-        g.drawString("A Simple Applet",20,20);
+        g.drawString("AA Simple Applet",20,20);
     }
 
 }

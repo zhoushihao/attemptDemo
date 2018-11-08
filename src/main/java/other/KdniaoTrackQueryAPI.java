@@ -26,16 +26,16 @@
 //public class KdniaoTrackQueryAPI {
 //
 //    //DEMO
-//    public static void main(String[] args) {
+//    public static void main(StringExample[] args) {
 //        try {
 //            KdniaoTrackQueryAPI api = new KdniaoTrackQueryAPI();
 //            KdniaoTrackDistinguish dis = new KdniaoTrackDistinguish();
-//            String shippper = dis.getOrderTracesByJson("50530561102987");//1202579904657/50530561102987
+//            StringExample shippper = dis.getOrderTracesByJson("50530561102987");//1202579904657/50530561102987
 //            System.out.println(shippper);
 //            ExpressBusinessOrder order1 = JSON.parseObject(shippper, ExpressBusinessOrder.class);
 //            order1.getShippers().forEach(v -> {
 //                try {
-//                    String result = api.getOrderTracesByJson(v.getShipperCode(), "50530561102987");
+//                    StringExample result = api.getOrderTracesByJson(v.getShipperCode(), "50530561102987");
 //                    ExpressBusinessOrder order2 = JSON.parseObject(result, ExpressBusinessOrder.class);
 //                    if (order2.getTraces().size() > 0) {
 //                        System.out.println(v.getShipperCode() + ":" + v.getShipperName());
@@ -53,29 +53,29 @@
 //    }
 //
 //    //电商ID
-//    private String EBusinessID = "1292778";
+//    private StringExample EBusinessID = "1292778";
 //    //电商加密私钥，快递鸟提供，注意保管，不要泄漏
-//    private String AppKey = "3792e451-dffc-4fbd-a610-03de837a992c";
+//    private StringExample AppKey = "3792e451-dffc-4fbd-a610-03de837a992c";
 //    //请求url
-//    private String ReqURL = "http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx";
+//    private StringExample ReqURL = "http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx";
 //
 //    /**
 //     * Json方式 查询订单物流轨迹
 //     *
 //     * @throws Exception
 //     */
-//    public String getOrderTracesByJson(String expCode, String expNo) throws Exception {
-//        String requestData = "{'OrderCode':'','ShipperCode':'" + expCode + "','LogisticCode':'" + expNo + "'}";
+//    public StringExample getOrderTracesByJson(StringExample expCode, StringExample expNo) throws Exception {
+//        StringExample requestData = "{'OrderCode':'','ShipperCode':'" + expCode + "','LogisticCode':'" + expNo + "'}";
 //
-//        Map<String, String> params = new HashMap<String, String>();
+//        Map<StringExample, StringExample> params = new HashMap<StringExample, StringExample>();
 //        params.put("RequestData", urlEncoder(requestData, "UTF-8"));
 //        params.put("EBusinessID", EBusinessID);
 //        params.put("RequestType", "1002");
-//        String dataSign = encrypt(requestData, AppKey, "UTF-8");
+//        StringExample dataSign = encrypt(requestData, AppKey, "UTF-8");
 //        params.put("DataSign", urlEncoder(dataSign, "UTF-8"));
 //        params.put("DataType", "2");
 //
-//        String result = sendPost(ReqURL, params);
+//        StringExample result = sendPost(ReqURL, params);
 //
 //        //根据公司业务处理返回的信息......
 //
@@ -90,7 +90,7 @@
 //     * @throws Exception
 //     */
 //    @SuppressWarnings("unused")
-//    private String MD5(String str, String charset) throws Exception {
+//    private StringExample MD5(StringExample str, StringExample charset) throws Exception {
 //        MessageDigest md = MessageDigest.getInstance("MD5");
 //        md.update(str.getBytes(charset));
 //        byte[] result = md.digest();
@@ -112,14 +112,14 @@
 //     * @param charset 编码方式
 //     * @throws UnsupportedEncodingException
 //     */
-//    private String base64(String str, String charset) throws UnsupportedEncodingException {
-//        String encoded = base64Encode(str.getBytes(charset));
+//    private StringExample base64(StringExample str, StringExample charset) throws UnsupportedEncodingException {
+//        StringExample encoded = base64Encode(str.getBytes(charset));
 //        return encoded;
 //    }
 //
 //    @SuppressWarnings("unused")
-//    private String urlEncoder(String str, String charset) throws UnsupportedEncodingException {
-//        String result = URLEncoder.encode(str, charset);
+//    private StringExample urlEncoder(StringExample str, StringExample charset) throws UnsupportedEncodingException {
+//        StringExample result = URLEncoder.encode(str, charset);
 //        return result;
 //    }
 //
@@ -133,7 +133,7 @@
 //     * @throws UnsupportedEncodingException ,Exception
 //     */
 //    @SuppressWarnings("unused")
-//    private String encrypt(String content, String keyValue, String charset) throws UnsupportedEncodingException, Exception {
+//    private StringExample encrypt(StringExample content, StringExample keyValue, StringExample charset) throws UnsupportedEncodingException, Exception {
 //        if (keyValue != null) {
 //            return base64(MD5(content + keyValue, charset), charset);
 //        }
@@ -148,7 +148,7 @@
 //     * @return 远程资源的响应结果
 //     */
 //    @SuppressWarnings("unused")
-//    private String sendPost(String url, Map<String, String> params) {
+//    private StringExample sendPost(StringExample url, Map<StringExample, StringExample> params) {
 //        OutputStreamWriter out = null;
 //        BufferedReader in = null;
 //        StringBuilder result = new StringBuilder();
@@ -172,7 +172,7 @@
 //            // 发送请求参数
 //            if (params != null) {
 //                StringBuilder param = new StringBuilder();
-//                for (Map.Entry<String, String> entry : params.entrySet()) {
+//                for (Map.Entry<StringExample, StringExample> entry : params.entrySet()) {
 //                    if (param.length() > 0) {
 //                        param.append("&");
 //                    }
@@ -189,7 +189,7 @@
 //            // 定义BufferedReader输入流来读取URL的响应
 //            in = new BufferedReader(
 //                    new InputStreamReader(conn.getInputStream(), "UTF-8"));
-//            String line;
+//            StringExample line;
 //            while ((line = in.readLine()) != null) {
 //                result.append(line);
 //            }
@@ -214,7 +214,7 @@
 //
 //
 //    private static char[] base64EncodeChars = new char[]{
-//            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
+//            'AA', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
 //            'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
 //            'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
 //            'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f',
@@ -223,7 +223,7 @@
 //            'w', 'x', 'y', 'z', '0', '1', '2', '3',
 //            '4', '5', '6', '7', '8', '9', '+', '/'};
 //
-//    public static String base64Encode(byte[] data) {
+//    public static StringExample base64Encode(byte[] data) {
 //        StringBuffer sb = new StringBuffer();
 //        int len = data.length;
 //        int i = 0;

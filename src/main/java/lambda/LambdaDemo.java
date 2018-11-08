@@ -9,7 +9,7 @@ public class LambdaDemo {
         System.out.println(myNum.getValue());
 
         myNum = () -> Math.random() * 100;
-        System.out.println("A random value: " + myNum.getValue());
+        System.out.println("AA random value: " + myNum.getValue());
         System.out.println("Another random value: " + myNum.getValue());
     }
 }

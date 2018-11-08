@@ -7,13 +7,22 @@ import java.util.List;
  * Created by ZSH
  */
 public class SortString {
+    String str = new String("good");
+    char[] ch = {'a','b','c'};
     public static void main (String args[]){
-        String[] arr = {"Now","is","the","time","for","all","good","men",
-                        "to","come","to","the","aid","of","their","country"};
+       SortString ss = new SortString();
+       ss.change(ss.str,ss.ch);
+       System.out.print(ss.str+" and ");
+       System.out.println(ss.ch);
+       int[] a = new int[10];
+       System.out.println(a[0]);
+       String[] s = new String[10];
+       System.out.println(s[0]);
 
-//        List<String> list = new ArrayList<>(List.of(arr));
-//        list.sort(String::compareToIgnoreCase);
-//
-//        System.out.println(list);
+    }
+
+    public void change(String str,char ch[]){
+        str = "test ok";
+        ch[0] = 'g';
     }
 }

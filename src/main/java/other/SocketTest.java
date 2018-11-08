@@ -5,11 +5,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by ZSH
  */
-public class Other {
+public class SocketTest {
     public static void main(String args[]) throws InterruptedException {
         final List<Callable<Object>> c = new LinkedList<>();
         for (int i = 254; i >= 2; i--) {
@@ -23,7 +24,6 @@ public class Other {
                 }
             }));
         }
-
         Executors.newFixedThreadPool(255).invokeAll(c);
     }
 

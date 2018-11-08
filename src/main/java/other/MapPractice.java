@@ -7,7 +7,7 @@ package other;
 public class MapPractice {
     public static MapPractice a = new MapPractice();
     {
-        System.out.println("A");
+        System.out.println("AA");
     }
 
     static {
@@ -15,7 +15,6 @@ public class MapPractice {
     }
 
     public static void main(String[] strs) {
-        MapPractice b = new MapPractice();
     }
 
 }

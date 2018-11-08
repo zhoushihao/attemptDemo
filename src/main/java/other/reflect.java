@@ -10,9 +10,9 @@ import java.util.Date;
 public class reflect {
 
     public static void main (String args[]) throws ParseException {
-//        Map<String,Object> map = new HashMap<>();
+//        Map<StringExample,Object> map = new HashMap<>();
 //        map.put("id","123123123");
-//        List<String> list = Arrays.asList("色母","清漆");
+//        List<StringExample> list = Arrays.asList("色母","清漆");
 //        map.put("type",list);
 //        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 //

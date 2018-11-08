@@ -490,65 +490,65 @@
                     <Column ss:AutoFitWidth="0" ss:Width="91.5" ss:Span="10"/>
                     <Row ss:AutoFitHeight="0" ss:Height="34.5">
                         <Cell ss:MergeAcross="8" ss:StyleID="s43191">
-                            <Data ss:Type="String">销 售 单</Data>
+                            <Data ss:Type="StringExample">销 售 单</Data>
                         </Cell>
                     </Row>
                     <Row ss:AutoFitHeight="0" ss:Height="20.25">
                         <Cell ss:MergeAcross="8" ss:StyleID="s43184">
-                            <Data ss:Type="String">订单编号：<xsl:value-of select="orderBean/orderId"/></Data>
+                            <Data ss:Type="StringExample">订单编号：<xsl:value-of select="orderBean/orderId"/></Data>
                         </Cell>
                     </Row>
                     <Row ss:AutoFitHeight="0" ss:Height="20.25">
                         <Cell ss:StyleID="s43119">
-                            <Data ss:Type="String">买方</Data>
+                            <Data ss:Type="StringExample">买方</Data>
                         </Cell>
                         <Cell ss:MergeAcross="3" ss:StyleID="s43119">
-                            <Data ss:Type="String"><xsl:value-of select="orderBean/customerName"/></Data>
+                            <Data ss:Type="StringExample"><xsl:value-of select="orderBean/customerName"/></Data>
                         </Cell>
                         <Cell ss:StyleID="s43112">
-                            <Data ss:Type="String">卖方</Data>
+                            <Data ss:Type="StringExample">卖方</Data>
                         </Cell>
                         <Cell ss:MergeAcross="2" ss:StyleID="m194040116">
-                            <Data ss:Type="String">杭州以诺行汽车科技股份有限公司</Data>
+                            <Data ss:Type="StringExample">杭州以诺行汽车科技股份有限公司</Data>
                         </Cell>
                     </Row>
                     <Row ss:AutoFitHeight="0" ss:Height="20.25">
                         <Cell ss:StyleID="s43119">
-                            <Data ss:Type="String">地址</Data>
+                            <Data ss:Type="StringExample">地址</Data>
                         </Cell>
                         <Cell ss:MergeAcross="3" ss:StyleID="s43119">
-                            <Data ss:Type="String"><xsl:value-of select="orderBean/address"/></Data>
+                            <Data ss:Type="StringExample"><xsl:value-of select="orderBean/address"/></Data>
                         </Cell>
                         <Cell ss:StyleID="s43112">
-                            <Data ss:Type="String">地址</Data>
+                            <Data ss:Type="StringExample">地址</Data>
                         </Cell>
                         <Cell ss:MergeAcross="2" ss:StyleID="m194040196">
-                            <Data ss:Type="String">杭州市文一西路1288号海创科技中心一号楼</Data>
+                            <Data ss:Type="StringExample">杭州市文一西路1288号海创科技中心一号楼</Data>
                         </Cell>
                     </Row>
                     <Row ss:AutoFitHeight="0" ss:Height="20.25">
                         <Cell ss:StyleID="s43119">
-                            <Data ss:Type="String">联系人</Data>
+                            <Data ss:Type="StringExample">联系人</Data>
                         </Cell>
                         <Cell ss:MergeAcross="3" ss:StyleID="s43119">
-                            <Data ss:Type="String"><xsl:value-of select="orderBean/contacts"/></Data>
+                            <Data ss:Type="StringExample"><xsl:value-of select="orderBean/contacts"/></Data>
                         </Cell>
                         <Cell ss:StyleID="s43112">
-                            <Data ss:Type="String">联系人</Data>
+                            <Data ss:Type="StringExample">联系人</Data>
                         </Cell>
                         <Cell ss:MergeAcross="2" ss:StyleID="m194040216">
-                            <Data ss:Type="String">章波</Data>
+                            <Data ss:Type="StringExample">章波</Data>
                         </Cell>
                     </Row>
                     <Row ss:AutoFitHeight="0" ss:Height="20.25">
                         <Cell ss:StyleID="s43119">
-                            <Data ss:Type="String">电话</Data>
+                            <Data ss:Type="StringExample">电话</Data>
                         </Cell>
                         <Cell ss:MergeAcross="3" ss:StyleID="s43168">
-                            <Data ss:Type="String"><xsl:value-of select="orderBean/telephone"/></Data>
+                            <Data ss:Type="StringExample"><xsl:value-of select="orderBean/telephone"/></Data>
                         </Cell>
                         <Cell ss:StyleID="s43112">
-                            <Data ss:Type="String">电话</Data>
+                            <Data ss:Type="StringExample">电话</Data>
                         </Cell>
                         <Cell ss:MergeAcross="2" ss:StyleID="m194044152">
                             <Data ss:Type="Number">18969952958</Data>
@@ -556,43 +556,43 @@
                     </Row>
                     <Row ss:AutoFitHeight="0" ss:Height="20.25">
                         <Cell ss:StyleID="s43119">
-                            <Data ss:Type="String">传真</Data>
+                            <Data ss:Type="StringExample">传真</Data>
                         </Cell>
                         <Cell ss:MergeAcross="3" ss:StyleID="s43170">
-                            <Data ss:Type="String"><xsl:value-of select="orderBean/fax"/></Data>
+                            <Data ss:Type="StringExample"><xsl:value-of select="orderBean/fax"/></Data>
                         </Cell>
                         <Cell ss:StyleID="s43112">
-                            <Data ss:Type="String">传真</Data>
+                            <Data ss:Type="StringExample">传真</Data>
                         </Cell>
                         <Cell ss:MergeAcross="2" ss:StyleID="m194044172"/>
                     </Row>
                     <Row ss:AutoFitHeight="0" ss:Height="16.5">
                         <Cell ss:StyleID="s43120">
-                            <Data ss:Type="String">序号</Data>
+                            <Data ss:Type="StringExample">序号</Data>
                         </Cell>
                         <Cell ss:StyleID="s43120">
-                            <Data ss:Type="String">品名</Data>
+                            <Data ss:Type="StringExample">品名</Data>
                         </Cell>
                         <Cell ss:StyleID="s43120">
-                            <Data ss:Type="String">型号规格（件号）</Data>
+                            <Data ss:Type="StringExample">型号规格（件号）</Data>
                         </Cell>
                         <Cell ss:StyleID="s43120">
-                            <Data ss:Type="String">单位</Data>
+                            <Data ss:Type="StringExample">单位</Data>
                         </Cell>
                         <Cell ss:StyleID="s43120">
-                            <Data ss:Type="String">数量</Data>
+                            <Data ss:Type="StringExample">数量</Data>
                         </Cell>
                         <Cell ss:StyleID="s43120">
-                            <Data ss:Type="String">单价</Data>
+                            <Data ss:Type="StringExample">单价</Data>
                         </Cell>
                         <Cell ss:StyleID="s43120">
-                            <Data ss:Type="String">金额</Data>
+                            <Data ss:Type="StringExample">金额</Data>
                         </Cell>
                         <Cell ss:StyleID="s43120">
-                            <Data ss:Type="String">交货日期</Data>
+                            <Data ss:Type="StringExample">交货日期</Data>
                         </Cell>
                         <Cell ss:StyleID="s43120">
-                            <Data ss:Type="String">备注</Data>
+                            <Data ss:Type="StringExample">备注</Data>
                         </Cell>
                     </Row>
 
@@ -603,28 +603,28 @@
                                 <Data ss:Type="Number"><xsl:value-of select="seq"/></Data>
                             </Cell>
                             <Cell ss:StyleID="s43123">
-                                <Data ss:Type="String"><xsl:value-of select="goodsName"/></Data>
+                                <Data ss:Type="StringExample"><xsl:value-of select="goodsName"/></Data>
                             </Cell>
                             <Cell ss:StyleID="s43123">
-                                <Data ss:Type="String"><xsl:value-of select="serialNumber"/></Data>
+                                <Data ss:Type="StringExample"><xsl:value-of select="serialNumber"/></Data>
                             </Cell>
                             <Cell ss:StyleID="s43122">
-                                <Data ss:Type="String"><xsl:value-of select="unitSymbol"/></Data>
+                                <Data ss:Type="StringExample"><xsl:value-of select="unitSymbol"/></Data>
                             </Cell>
                             <Cell ss:StyleID="s43141">
-                                <Data ss:Type="String"><xsl:value-of select="saleAmount"/></Data>
+                                <Data ss:Type="StringExample"><xsl:value-of select="saleAmount"/></Data>
                             </Cell>
                             <Cell ss:StyleID="s43125">
-                                <Data ss:Type="String"><xsl:value-of select="unitPrice"/></Data>
+                                <Data ss:Type="StringExample"><xsl:value-of select="unitPrice"/></Data>
                             </Cell>
                             <Cell ss:StyleID="s43115">
-                                <Data ss:Type="String"><xsl:value-of select="totalSum"/></Data>
+                                <Data ss:Type="StringExample"><xsl:value-of select="totalSum"/></Data>
                             </Cell>
                             <Cell ss:StyleID="s43142">
-                                <Data ss:Type="String"><xsl:value-of select="commitDate"/></Data>
+                                <Data ss:Type="StringExample"><xsl:value-of select="commitDate"/></Data>
                             </Cell>
                             <Cell ss:StyleID="s43143">
-                                <Data ss:Type="String"><xsl:value-of select="remark"/></Data>
+                                <Data ss:Type="StringExample"><xsl:value-of select="remark"/></Data>
                             </Cell>
                         </Row>
 
@@ -634,16 +634,16 @@
 
                     <Row ss:AutoFitHeight="0" ss:Height="20.25">
                         <Cell ss:StyleID="s43112">
-                            <Data ss:Type="String">总金额（大写）：</Data>
+                            <Data ss:Type="StringExample">总金额（大写）：</Data>
                         </Cell>
                         <Cell ss:StyleID="s43113"/>
                         <Cell ss:StyleID="s43113">
-                            <Data ss:Type="String">人民币</Data>
+                            <Data ss:Type="StringExample">人民币</Data>
                         </Cell>
                         <Cell ss:StyleID="s43113"/>
                         <Cell ss:StyleID="s43113"/>
                         <Cell ss:StyleID="s43113">
-                            <Data ss:Type="String">（小写）</Data>
+                            <Data ss:Type="StringExample">（小写）</Data>
                         </Cell>
                         <Cell ss:StyleID="s43114" ss:Formula="=SUM(R[-25]C:R[-1]C)">
                             <Data
@@ -651,14 +651,14 @@
                             </Data>
                         </Cell>
                         <Cell ss:MergeAcross="1" ss:StyleID="m194044132">
-                            <Data ss:Type="String">（含17%增值税）</Data>
+                            <Data ss:Type="StringExample">（含17%增值税）</Data>
                         </Cell>
                         <Cell ss:StyleID="s43126"/>
                     </Row>
                     <Row ss:AutoFitHeight="0" ss:Height="15.75">
                         <Cell ss:MergeAcross="8" ss:MergeDown="6" ss:StyleID="m194044092">
                             <ss:Data
-                                    ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+                                    ss:Type="StringExample" xmlns="http://www.w3.org/TR/REC-html40">
                                 <Font
                                         html:Color="#000000">1、表内单价为人民币含税（17%增值税）含包装到货价；&#10;2、交货地点：
                                 </Font>
@@ -679,7 +679,7 @@
                     <Row ss:AutoFitHeight="0" ss:Height="29.25"/>
                     <Row ss:AutoFitHeight="0" ss:Height="56.25" ss:StyleID="s43111">
                         <Cell ss:MergeAcross="8" ss:StyleID="m194044072">
-                            <Data ss:Type="String">买方代表签字： 卖方代表签字：&#10;&#10;日期：2017年 月 日 日期：2017年 月 日</Data>
+                            <Data ss:Type="StringExample">买方代表签字： 卖方代表签字：&#10;&#10;日期：2017年 月 日 日期：2017年 月 日</Data>
                         </Cell>
                     </Row>
                 </Table>

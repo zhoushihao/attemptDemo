@@ -15,6 +15,6 @@ public class MethodRefDemo {
         outStr = stringOp(MyStringOps::strReverse, inStr);
 
         System.out.println("Original string: " + inStr);
-        System.out.println("String reversed: " + outStr);
+        System.out.println("StringExample reversed: " + outStr);
     }
 }

@@ -31,7 +31,7 @@ public class lambfaAsArgumentsDemo {
             return result.toString();
         }, inStr);
 
-        System.out.println("The String with spaces removed: " + outStr);
+        System.out.println("The StringExample with spaces removed: " + outStr);
 
         //=======================================================================
 
